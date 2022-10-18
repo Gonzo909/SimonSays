@@ -62,30 +62,7 @@ fun play() {
 }
 
 fun main() {
-    //variables for each button
-    //val red = "red"
-    //val blue = "blue"
-    //val yellow = "yellow"
-    //val green = "green"
-
-    //variable to keep track of what level the player is on
-    //var level = 0
-
-    //list to keep track of the order of the buttons to be memorized by the player
-    //val buttonOrder = mutableListOf<String>()
-
-    //player inputs. One for the main menu choice, one for the buttons pressed when playing
     var playerMenuChoice = ""
-    //val playerButtonChoice = mutableListOf<String>()
-
-    //check if the game has started/stopped
-    //var playing = false
-    //var gameOver = false
-    //var win = false
-
-    //checks if it is the computer's turn or the player's
-    //var compTurn = false
-
     //list of high scores
     var highScores = mutableListOf(0)
 
