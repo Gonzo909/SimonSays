@@ -1,6 +1,6 @@
 //import kotlin.random.Random
 
-fun play() {
+fun play(highScores: MutableList<Int>) {
     var win = true
     val buttonOrder = mutableListOf<String>()
     val playerOrder = mutableListOf<String>()
@@ -52,6 +52,8 @@ fun play() {
         //if player lost, game over
         if (!win) {
             println("Game Over! Lost at level: $level")
+            highScores.add(level)
+            highScores.sort()
             return
         }
 
@@ -64,7 +66,7 @@ fun play() {
 fun main() {
     var playerMenuChoice = ""
     //list of high scores
-    var highScores = mutableListOf(0)
+    val highScores = mutableListOf(0)
 
     //menu and getting player choice
     println("Welcome to Memory Game!")
@@ -73,8 +75,14 @@ fun main() {
     println("3. High Scores")
     playerMenuChoice = readln()
 
-    if (playerMenuChoice == "1") {
-        println("Game Start!")
-        play()
+    when (playerMenuChoice) {
+       "1" -> {
+           println("Game Start!")
+           play(highScores)
+       }
+        "2" -> println("Thank you for playing")
+        "3" -> {
+            println("High Scores")
+            }
+        }
     }
-}
