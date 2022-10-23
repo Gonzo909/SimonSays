@@ -82,7 +82,7 @@ fun main() {
        }
         "2" -> println("Thank you for playing")
         "3" -> {
-            println("High Scores")
+            println("High Scores not yet available")
             }
         }
     }
