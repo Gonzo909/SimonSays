@@ -7,7 +7,7 @@ This program is a base logic for a Simon Says memory game which will be turned i
 This was chosen as practice for using the Kotlin language, and to get started in writing mobile apps as well.
 
 
-[Software Demo Video]([https://youtu.be/D5p2SEuTJ6g])
+[Software Demo Video](https://youtu.be/D5p2SEuTJ6g)
 
 # Development Environment
 
